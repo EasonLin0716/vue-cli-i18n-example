@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
+import i18n from './common/plugins/vue-i18n'
 
 Vue.config.productionTip = false
 
 new Vue({
-  render: function (h) { return h(App) },
+  i18n,
+  render: (h) => h(App),
 }).$mount('#app')
